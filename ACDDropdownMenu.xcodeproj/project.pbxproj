@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB5D334B1D1C372D00C26B4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5D334A1D1C372D00C26B4A /* main.m */; };
-		FB5D334E1D1C372D00C26B4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5D334D1D1C372D00C26B4A /* AppDelegate.m */; };
-		FB5D33511D1C372D00C26B4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5D33501D1C372D00C26B4A /* ViewController.m */; };
-		FB5D33541D1C372D00C26B4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5D33521D1C372D00C26B4A /* Main.storyboard */; };
-		FB5D33561D1C372D00C26B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5D33551D1C372D00C26B4A /* Assets.xcassets */; };
-		FB5D33591D1C372D00C26B4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5D33571D1C372D00C26B4A /* LaunchScreen.storyboard */; };
+		FB5D33691D1C382200C26B4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5D33631D1C382200C26B4A /* AppDelegate.m */; };
+		FB5D336A1D1C382200C26B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5D33641D1C382200C26B4A /* Assets.xcassets */; };
+		FB5D336B1D1C382200C26B4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5D33651D1C382200C26B4A /* LaunchScreen.storyboard */; };
+		FB5D336C1D1C382200C26B4A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB5D33671D1C382200C26B4A /* Info.plist */; };
+		FB5D336D1D1C382200C26B4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5D33681D1C382200C26B4A /* main.m */; };
+		FB5D33771D1C385A00C26B4A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5D33751D1C385A00C26B4A /* RootViewController.m */; };
+		FB5D33781D1C385A00C26B4A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB5D33761D1C385A00C26B4A /* RootViewController.xib */; };
+		FB5D337F1D1C38A000C26B4A /* ACDDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5D337E1D1C38A000C26B4A /* ACDDropdownMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB5D33461D1C372D00C26B4A /* ACDDropdownMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACDDropdownMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB5D334A1D1C372D00C26B4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FB5D334C1D1C372D00C26B4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FB5D334D1D1C372D00C26B4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FB5D334F1D1C372D00C26B4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FB5D33501D1C372D00C26B4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FB5D33531D1C372D00C26B4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB5D33551D1C372D00C26B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FB5D33581D1C372D00C26B4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FB5D335A1D1C372D00C26B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5D33621D1C382200C26B4A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB5D33631D1C382200C26B4A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB5D33641D1C382200C26B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB5D33661D1C382200C26B4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB5D33671D1C382200C26B4A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5D33681D1C382200C26B4A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB5D33741D1C385A00C26B4A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		FB5D33751D1C385A00C26B4A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FB5D33761D1C385A00C26B4A /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		FB5D337D1D1C38A000C26B4A /* ACDDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDDropdownMenu.h; sourceTree = "<group>"; };
+		FB5D337E1D1C38A000C26B4A /* ACDDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACDDropdownMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +46,8 @@
 		FB5D333D1D1C372D00C26B4A = {
 			isa = PBXGroup;
 			children = (
-				FB5D33481D1C372D00C26B4A /* ACDDropdownMenu */,
+				FB5D33601D1C382200C26B4A /* Controllers */,
+				FB5D33611D1C382200C26B4A /* Supporting Files */,
 				FB5D33471D1C372D00C26B4A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,28 +60,47 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FB5D33481D1C372D00C26B4A /* ACDDropdownMenu */ = {
+		FB5D33601D1C382200C26B4A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FB5D334C1D1C372D00C26B4A /* AppDelegate.h */,
-				FB5D334D1D1C372D00C26B4A /* AppDelegate.m */,
-				FB5D334F1D1C372D00C26B4A /* ViewController.h */,
-				FB5D33501D1C372D00C26B4A /* ViewController.m */,
-				FB5D33521D1C372D00C26B4A /* Main.storyboard */,
-				FB5D33551D1C372D00C26B4A /* Assets.xcassets */,
-				FB5D33571D1C372D00C26B4A /* LaunchScreen.storyboard */,
-				FB5D335A1D1C372D00C26B4A /* Info.plist */,
-				FB5D33491D1C372D00C26B4A /* Supporting Files */,
+				FB5D33731D1C385A00C26B4A /* RootViewController */,
+				FB5D337C1D1C38A000C26B4A /* ACDDropdownMenu */,
 			);
-			path = ACDDropdownMenu;
+			name = Controllers;
+			path = ACDDropdownMenu/Controllers;
 			sourceTree = "<group>";
 		};
-		FB5D33491D1C372D00C26B4A /* Supporting Files */ = {
+		FB5D33611D1C382200C26B4A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FB5D334A1D1C372D00C26B4A /* main.m */,
+				FB5D33621D1C382200C26B4A /* AppDelegate.h */,
+				FB5D33631D1C382200C26B4A /* AppDelegate.m */,
+				FB5D33641D1C382200C26B4A /* Assets.xcassets */,
+				FB5D33651D1C382200C26B4A /* LaunchScreen.storyboard */,
+				FB5D33671D1C382200C26B4A /* Info.plist */,
+				FB5D33681D1C382200C26B4A /* main.m */,
 			);
 			name = "Supporting Files";
+			path = "ACDDropdownMenu/Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB5D33731D1C385A00C26B4A /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D33741D1C385A00C26B4A /* RootViewController.h */,
+				FB5D33751D1C385A00C26B4A /* RootViewController.m */,
+				FB5D33761D1C385A00C26B4A /* RootViewController.xib */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		FB5D337C1D1C38A000C26B4A /* ACDDropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D337D1D1C38A000C26B4A /* ACDDropdownMenu.h */,
+				FB5D337E1D1C38A000C26B4A /* ACDDropdownMenu.m */,
+			);
+			path = ACDDropdownMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +160,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5D33591D1C372D00C26B4A /* LaunchScreen.storyboard in Resources */,
-				FB5D33561D1C372D00C26B4A /* Assets.xcassets in Resources */,
-				FB5D33541D1C372D00C26B4A /* Main.storyboard in Resources */,
+				FB5D336A1D1C382200C26B4A /* Assets.xcassets in Resources */,
+				FB5D336B1D1C382200C26B4A /* LaunchScreen.storyboard in Resources */,
+				FB5D33781D1C385A00C26B4A /* RootViewController.xib in Resources */,
+				FB5D336C1D1C382200C26B4A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,27 +174,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5D33511D1C372D00C26B4A /* ViewController.m in Sources */,
-				FB5D334E1D1C372D00C26B4A /* AppDelegate.m in Sources */,
-				FB5D334B1D1C372D00C26B4A /* main.m in Sources */,
+				FB5D336D1D1C382200C26B4A /* main.m in Sources */,
+				FB5D33691D1C382200C26B4A /* AppDelegate.m in Sources */,
+				FB5D337F1D1C38A000C26B4A /* ACDDropdownMenu.m in Sources */,
+				FB5D33771D1C385A00C26B4A /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FB5D33521D1C372D00C26B4A /* Main.storyboard */ = {
+		FB5D33651D1C382200C26B4A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FB5D33531D1C372D00C26B4A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FB5D33571D1C372D00C26B4A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB5D33581D1C372D00C26B4A /* Base */,
+				FB5D33661D1C382200C26B4A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -265,7 +283,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ACDDropdownMenu/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/ACDDropdownMenu/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nolol.ACDDropdownMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,7 +295,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ACDDropdownMenu/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/ACDDropdownMenu/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nolol.ACDDropdownMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
