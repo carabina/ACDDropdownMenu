@@ -40,6 +40,7 @@
     _menuCellHeight = 45.0;
     _menuCellSeparatorInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     _menuCellTextAlignment = NSTextAlignmentCenter;
+    _menuBackgroundAlpha = 1.0;
 }
 
 #pragma mark - layout
@@ -114,12 +115,12 @@
     cell.textLabel.font = self.menuCellTextFont;
     cell.textLabel.textColor = self.menuCellTextColor;
     cell.textLabel.textAlignment = self.menuCellTextAlignment;
-    cell.backgroundColor = self.menuBackgroundColor;
-    if (self.menuCellSelectionColor) {
-        cell.selectedBackgroundView = [[UIView alloc] init];
-        cell.selectedBackgroundView.backgroundColor =
-            self.menuCellSelectionColor;
-    }
+    //    cell.backgroundColor = self.menuBackgroundColor;
+    //    if (self.menuCellSelectionColor) {
+    //        cell.selectedBackgroundView = [[UIView alloc] init];
+    //        cell.selectedBackgroundView.backgroundColor =
+    //            self.menuCellSelectionColor;
+    //    }
     return cell;
 }
 
@@ -258,7 +259,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 
 - (UIColor *)menuBackgroundColor {
     if (!_menuBackgroundColor) {
-        _menuBackgroundColor = [UIColor whiteColor];
+        _menuBackgroundColor = [UIColor clearColor];
     }
     return _menuBackgroundColor;
 }
@@ -280,7 +281,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
                                           UIViewAutoresizingFlexibleBottomMargin;
         _menuTableView.dataSource = self;
         _menuTableView.delegate = self;
-        _menuTableView.backgroundColor = [UIColor clearColor];
+        _menuTableView.backgroundColor = self.menuBackgroundColor;
+        _menuTableView.alpha = self.menuBackgroundAlpha;
         _menuTableView.tableFooterView = [[UIView alloc]
             initWithFrame:CGRectMake(0.0, 0.0, 0.0, CGFLOAT_MIN)];
         [_menuTableView registerClass:[UITableViewCell class]
@@ -294,7 +296,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (_menuHeaderView == nil) {
         _menuHeaderView = [[UIView alloc] initWithFrame:CGRectZero];
         _menuHeaderView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        _menuHeaderView.backgroundColor = self.menuBackgroundColor;
+        _menuHeaderView.backgroundColor = [UIColor clearColor];
         [self.menuBackgroundView addSubview:_menuHeaderView];
     }
     return _menuHeaderView;

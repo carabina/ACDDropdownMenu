@@ -33,6 +33,7 @@
 @property (nonatomic, strong) UIColor *menuCellTextColor;
 @property (nonatomic, strong) UIColor *menuBackgroundColor;
 @property (nonatomic, strong) UIColor *menuCellSelectionColor;
+@property (nonatomic, assign) CGFloat menuBackgroundAlpha;
 
 - (instancetype)initWithTitle:(NSString *)title
          navigationController:(UINavigationController *)navigationController;

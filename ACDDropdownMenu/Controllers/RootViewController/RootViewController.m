@@ -25,6 +25,7 @@
                           navigationController:self.navigationController];
     menu.titlesArray = @[ @"1号动作", @"2号动作", @"3号动作", @"4号动作" ];
     menu.indicatorColor = [UIColor redColor];
+    menu.menuBackgroundAlpha = 0.6;
     menu.delegate = self;
     self.navigationItem.titleView = menu;
 }
