@@ -17,32 +17,15 @@
 
 #pragma mark -
 @implementation ACDDropdownMenu
-// 下拉菜单按钮
-//@synthesize titlesArray = _titlesArray;
-//@synthesize titleFont = _titleFont;
-//@synthesize titleColor = _titleColor;
-//@synthesize indicatorImage = _indicatorImage;
-//@synthesize indicatorPadding = _indicatorPadding;
-//@synthesize animationDuration = _animationDuration;
-// 下拉菜单
-//@synthesize keepMenuCellSelection = _keepMenuCellSelection;
-//@synthesize menuCellHeight = _menuCellHeight;
-//@synthesize menuCellSeparatorInsets = _menuCellSeparatorInsets;
-//@synthesize menuCellTextAlignment = _menuCellTextAlignment;
-//@synthesize menuCellTextFont = _menuCellTextFont;
-//@synthesize menuCellTextColor = _menuCellTextColor;
-//@synthesize menuBackgroundColor = _menuBackgroundColor;
-//@synthesize menuCellSelectionColor = _menuCellSelectionColor;
-
 #pragma mark - Init
 - (instancetype)initWithTitle:(NSString *)title
          navigationController:(UINavigationController *)navigationController {
     self = [ACDDropdownMenu buttonWithType:UIButtonTypeCustom];
     if (self) {
-        [self setTitle:title forState:UIControlStateNormal];
         self.frame = navigationController.navigationBar.frame;
         self.autoresizingMask =
             UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        [self setTitle:title forState:UIControlStateNormal];
         self.navigationController = navigationController;
         [self commonInit];
     }
@@ -53,7 +36,7 @@
     //对简单数据结构初始化
     _indicatorPadding = 8.0;
     _animationDuration = 0.25;
-    _keepMenuCellSelection = YES;
+    _keepMenuCellSelection = NO;
     _menuCellHeight = 45.0;
     _menuCellSeparatorInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     _menuCellTextAlignment = NSTextAlignmentCenter;
@@ -66,14 +49,15 @@
     self.titleLabel.font = self.titleFont;
     [self setTitleColor:self.titleColor forState:UIControlStateNormal];
     [self setTitleEdgeInsets:UIEdgeInsetsMake(
-                                 0, -CGRectGetWidth(self.imageView.frame), 0,
-                                 CGRectGetWidth(self.imageView.frame))];
+                                 0.0, -CGRectGetWidth(self.imageView.frame),
+                                 0.0, CGRectGetWidth(self.imageView.frame) +
+                                          self.indicatorPadding)];
 
     [self setImage:self.indicatorImage forState:UIControlStateNormal];
     [self setImageEdgeInsets:UIEdgeInsetsMake(
-                                 0, CGRectGetWidth(self.titleLabel.frame) +
-                                        self.indicatorPadding,
-                                 0, -CGRectGetWidth(self.titleLabel.frame))];
+                                 0.0, CGRectGetWidth(self.titleLabel.frame) +
+                                          self.indicatorPadding,
+                                 0.0, -CGRectGetWidth(self.titleLabel.frame))];
 
     CGRect menuHeaderViewFrame = self.menuHeaderView.frame;
     menuHeaderViewFrame.size.width =
@@ -83,8 +67,8 @@
 
     CGRect menuBackgoundViewFrame = [[UIScreen mainScreen] bounds];
     menuBackgoundViewFrame.origin.y +=
-        CGRectGetMaxX(self.navigationController.navigationBar.frame);
-    menuBackgoundViewFrame.size.height =
+        CGRectGetMaxY(self.navigationController.navigationBar.frame);
+    menuBackgoundViewFrame.size.height -=
         CGRectGetMaxY(self.navigationController.navigationBar.frame);
     self.menuBackgroundView.frame = menuBackgoundViewFrame;
 }
@@ -156,7 +140,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 
 - (void)tableView:(UITableView *)tableView
     didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (self.keepMenuCellSelection) {
+    if (!self.keepMenuCellSelection) {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
     }
     if ([self.delegate respondsToSelector:@selector(didSelectedTitleAtIndex:)]) {
