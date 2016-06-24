@@ -20,7 +20,7 @@
     self.view.backgroundColor =
         [UIColor colorWithRed:0.162 green:0.928 blue:1.000 alpha:1.000];
     ACDDropdownMenu *menu =
-        [[ACDDropdownMenu alloc] initWithTitle:@"下拉菜单"
+        [[ACDDropdownMenu alloc] initWithTitle:@"1号动作"
                           navigationController:self.navigationController];
     menu.titlesArray = @[ @"1号动作", @"2号动作", @"3号动作", @"4号动作" ];
     menu.delegate = self;
@@ -31,7 +31,7 @@
     [super viewWillAppear:animated];
 
     self.label = [[UILabel alloc] init];
-    self.label.text = @"动作指示器";
+    self.label.text = @"1号动作";
     self.label.textAlignment = NSTextAlignmentCenter;
     self.label.frame = CGRectMake(0, 0, 100, 40);
     self.label.center = self.view.center;
