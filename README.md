@@ -27,6 +27,17 @@ You can customize almost everything you want custom attributes.
 @property (nonatomic, assign) CGFloat menuBackgroundAlpha;
 ```
 
+## Usage
+```
+ACDDropdownMenu *menu =
+        [[ACDDropdownMenu alloc] initWithTitle:@"1号动作"
+                          navigationController:self.navigationController];
+    menu.titlesArray = @[ @"所有文档", @"已签文档", @"原始文档", @"草稿箱" ];
+    menu.menuBackgroundAlpha = 0.6;
+    menu.delegate = self;
+    self.navigationItem.titleView = menu;
+```
+
 Like this~  
 就像这样~
 
