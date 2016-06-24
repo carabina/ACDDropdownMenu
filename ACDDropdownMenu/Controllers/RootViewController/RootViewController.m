@@ -23,7 +23,6 @@
         [[ACDDropdownMenu alloc] initWithTitle:@"下拉菜单"
                           navigationController:self.navigationController];
     menu.titlesArray = @[ @"1号动作", @"2号动作", @"3号动作", @"4号动作" ];
-    menu.indicatorImage = [UIImage imageNamed:@"Arrow"];
     menu.delegate = self;
     self.navigationItem.titleView = menu;
 }
@@ -37,6 +36,22 @@
     self.label.frame = CGRectMake(0, 0, 100, 40);
     self.label.center = self.view.center;
     [self.view addSubview:self.label];
+}
+
+- (UIImage *)createImage {
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(10, 10), NO, 0);
+    UIBezierPath *bezierPath = [UIBezierPath bezierPath];
+    [bezierPath moveToPoint:CGPointMake(0, 3)];
+    [bezierPath addLineToPoint:CGPointMake(5, 10)];
+    [bezierPath addLineToPoint:CGPointMake(10, 3)];
+    bezierPath.lineWidth = 1;
+    [[UIColor blackColor] set];
+    [bezierPath stroke];
+
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    return image;
 }
 
 - (void)didReceiveMemoryWarning {

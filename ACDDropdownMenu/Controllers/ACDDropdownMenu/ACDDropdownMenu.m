@@ -220,7 +220,17 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 
 - (UIImage *)indicatorImage {
     if (!_indicatorImage) {
-        return nil;
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(10, 10), NO, 0);
+        UIBezierPath *bezierPath = [UIBezierPath bezierPath];
+        [bezierPath moveToPoint:CGPointMake(0, 3)];
+        [bezierPath addLineToPoint:CGPointMake(5, 10)];
+        [bezierPath addLineToPoint:CGPointMake(10, 3)];
+        bezierPath.lineWidth = 1;
+        [[UIColor blackColor] set];
+        [bezierPath stroke];
+        _indicatorImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        return _indicatorImage;
     }
     return _indicatorImage;
 }
