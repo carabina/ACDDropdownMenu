@@ -13,7 +13,6 @@
 		FB5D336C1D1C382200C26B4A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB5D33671D1C382200C26B4A /* Info.plist */; };
 		FB5D336D1D1C382200C26B4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5D33681D1C382200C26B4A /* main.m */; };
 		FB5D33771D1C385A00C26B4A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5D33751D1C385A00C26B4A /* RootViewController.m */; };
-		FB5D33781D1C385A00C26B4A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB5D33761D1C385A00C26B4A /* RootViewController.xib */; };
 		FB5D337F1D1C38A000C26B4A /* ACDDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5D337E1D1C38A000C26B4A /* ACDDropdownMenu.m */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,6 @@
 		FB5D33681D1C382200C26B4A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB5D33741D1C385A00C26B4A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		FB5D33751D1C385A00C26B4A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		FB5D33761D1C385A00C26B4A /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		FB5D337D1D1C38A000C26B4A /* ACDDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDDropdownMenu.h; sourceTree = "<group>"; };
 		FB5D337E1D1C38A000C26B4A /* ACDDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACDDropdownMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +87,6 @@
 			children = (
 				FB5D33741D1C385A00C26B4A /* RootViewController.h */,
 				FB5D33751D1C385A00C26B4A /* RootViewController.m */,
-				FB5D33761D1C385A00C26B4A /* RootViewController.xib */,
 			);
 			path = RootViewController;
 			sourceTree = "<group>";
@@ -162,7 +159,6 @@
 			files = (
 				FB5D336A1D1C382200C26B4A /* Assets.xcassets in Resources */,
 				FB5D336B1D1C382200C26B4A /* LaunchScreen.storyboard in Resources */,
-				FB5D33781D1C385A00C26B4A /* RootViewController.xib in Resources */,
 				FB5D336C1D1C382200C26B4A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +318,7 @@
 				FB5D335F1D1C372D00C26B4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

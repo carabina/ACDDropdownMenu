@@ -19,10 +19,12 @@
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor =
         [UIColor colorWithRed:0.162 green:0.928 blue:1.000 alpha:1.000];
+
     ACDDropdownMenu *menu =
         [[ACDDropdownMenu alloc] initWithTitle:@"1号动作"
                           navigationController:self.navigationController];
     menu.titlesArray = @[ @"1号动作", @"2号动作", @"3号动作", @"4号动作" ];
+    menu.indicatorColor = [UIColor redColor];
     menu.delegate = self;
     self.navigationItem.titleView = menu;
 }

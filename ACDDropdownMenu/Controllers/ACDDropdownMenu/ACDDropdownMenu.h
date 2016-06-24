@@ -21,6 +21,7 @@
 @property (nonatomic, strong) UIFont *titleFont;
 @property (nonatomic, strong) UIColor *titleColor;
 @property (nonatomic, strong) UIImage *indicatorImage;
+@property (nonatomic, strong) UIColor *indicatorColor;
 @property (nonatomic, assign) CGFloat indicatorPadding;
 @property (nonatomic, assign) NSTimeInterval animationDuration;
 // 定制下拉菜单

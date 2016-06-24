@@ -218,6 +218,13 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
     return _titleColor;
 }
 
+- (UIColor *)indicatorColor {
+    if (!_indicatorColor) {
+        _indicatorColor = [UIColor blackColor];
+    }
+    return _indicatorColor;
+}
+
 - (UIImage *)indicatorImage {
     if (!_indicatorImage) {
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(10, 10), NO, 0);
@@ -226,7 +233,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
         [bezierPath addLineToPoint:CGPointMake(5, 10)];
         [bezierPath addLineToPoint:CGPointMake(10, 3)];
         bezierPath.lineWidth = 1;
-        [[UIColor blackColor] set];
+        [self.indicatorColor set];
         [bezierPath stroke];
         _indicatorImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
